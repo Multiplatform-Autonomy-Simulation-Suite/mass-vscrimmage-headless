@@ -1,12 +1,22 @@
-# vscrim_headless
+# mass-vscrimmage-headless
 
-## CI/CD Guide
+## Running a Mission using vSCRIMMAGE-headless
+```
+docker run multiplatformautonomy/vscrimmage_headless scrimmage missions/straight_nogui.xml
+```
 
-Using GitLab CI, this repo has the following CI Stages:
+## Running a bash prompt using vSCRIMMAGE-headless
+### Start vSCRIMMAGE-headless bash prompt instance:
+```
+docker run --name vscrimmage_headless -it multiplatformautonomy/vscrimmage_headless /bin/bash
+```
 
-1. Syntax-Lint -
-    * shellcheck - searches for any shell scripts in the repo and executes shellcheck lint/syntax checker. Confer with https://github.com/koalaman/shellcheck/wiki/Checks for Error Code Reference.
-    * hadolint - performs lint, syntax and shellcheck against the Dockerfile. Confer with https://github.com/hadolint/hadolint#rules for Error Code Reference.
-2. Build - run on non-master branches, performs docker build and docker push to the harbor registry for image tagged as branch name. 
-3. Build-Master - run only on the master branch, performs docker build and docker push to the harbor registry for the latest tag.
-~                                                                                      
+### Reattach to an existing vSCRIMMAGE-headless bash prompt instance
+```
+docker exec vscrimmage_headless /bin/bash
+```
+
+### Copy a mission file from an existing vSCRIMMAGE-headless bash prompt instance
+```
+docker cp vscrimmage_headless:/scrimmage/scrimmage/missions/{mission_filename}.xml ./{mission_filename}.xml
+```
