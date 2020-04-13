@@ -2,7 +2,7 @@
 
 ## Overview
 ### vSCRIMMAGE-headless
-This repository contains a GUI-less image for running (SCRIMMAGE)[https://github.com/gtri/scrimmage].  For scrimmage-related questions and issues, please see the (tutorials and documentation for SCRIMMAGE)[http://scrimmagesim.org].  For issues and bugs pertaining to this docker deployment, please see the GitHub Issues page for (vSCRIMMAGE-headless)[https://github.com/Multiplatform-Autonomy-Simulation-Suite/mass-vscrimmage-headless].
+This repository contains a GUI-less image for running [SCRIMMAGE](https://github.com/gtri/scrimmage).  For scrimmage-related questions and issues, please see the [tutorials and documentation for SCRIMMAGE](http://scrimmagesim.org).  For issues and bugs pertaining to this docker deployment, please see the GitHub Issues page for [vSCRIMMAGE-headless](https://github.com/Multiplatform-Autonomy-Simulation-Suite/mass-vscrimmage-headless).
 
 ## Usage
 ### Running a Mission using vSCRIMMAGE-headless
@@ -27,7 +27,7 @@ docker cp vscrimmage_headless:/scrimmage/scrimmage/missions/{mission_filename}.x
 ```
 
 ## MASS
-This repository and the accompanying docker image was prepared as part of GTRI's Multi-platform Autonomous Simulation Suite effort, sponsored by the Air Force Research Laboratory.
+This repository and the accompanying docker image was prepared as part of [GTRI](https://gtri.gatech.edu)'s Multi-platform Autonomous Simulation Suite effort, sponsored by the Air Force Research Laboratory.
 
 *The views and conclusions contained herein are those of the authors and should not be interpreted as necessarily representing the official policies or endorsements, either expressed or implied, of the Air Force Research Laboratory or the U.S. Government.*
 
