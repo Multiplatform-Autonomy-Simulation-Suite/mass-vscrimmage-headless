@@ -7,7 +7,7 @@ This repository contains a GUI-less image for running [SCRIMMAGE](https://github
 ## Usage
 ### Running a Mission using vSCRIMMAGE-headless
 ```
-docker run multiplatformautonomy/vscrimmage-headless scrimmage missions/straight_nogui.xml
+docker run multiplatformautonomy/vscrimmage-headless scrimmage scrimmage/missions/straight_nogui.xml
 ```
 
 ### Running a bash prompt using vSCRIMMAGE-headless
